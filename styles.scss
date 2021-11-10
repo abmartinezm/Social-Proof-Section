@@ -22,11 +22,11 @@ body {
 
 
   .container {
-    margin-left: 15%;
-    margin-right: 15%;
-    width: 60vw;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
     height: 100%;
-    /* background: violet; */
+    // background: violet;
     position: absolute;
     margin-top: 50px;
 
@@ -34,7 +34,7 @@ body {
     .header {
       float: left;
       width: 50%;
-      height: 35vh;
+      height: auto;
       /* background-color: rgb(204, 238, 238); */
       position: absolute;
       padding: 0px;
@@ -48,16 +48,18 @@ body {
         width: 100%;
         height: 50vh;
         float: left;
-        height: 40vh;
+        height: auto;
+        // background: lightgreen;
 
         h1 {
           margin-top: 0px;
           color: var(--Very-Dark-Magenta);
-          font-size: 35px;
+          font-size: 3rem;
+          margin-bottom: 0;
         }
 
         p {
-          font-size: 13px;
+          font-size: 1.1rem;
           line-height: 25px;
           word-spacing: 3px;
           white-space: initial;
@@ -73,8 +75,9 @@ body {
     .ratings {
       float: right;
       width: 50%;
-      height: 35vh;
+      height: auto;
       /* background-color: blueviolet; */
+      // background: lightblue;
       padding-top: 0px;
       margin-right: 0px;
       position: relative;
@@ -87,10 +90,10 @@ body {
         width: 70%;
         float: right;
         clear: both;
-        height: 15%;
+        height: 8vh;
         border-radius: 6px;
         margin-right: 100px;
-        margin-bottom: 20px;
+        margin-bottom: 7.5%;
         display: flex;
         padding-left: 5%;
         background: var(--Light-Grayish-Magenta);
@@ -138,45 +141,46 @@ body {
     .buyers {
       display: block;
       display: flex;
-      width: 60vw;
-      height: 50vh;
+      width: 100%;
+      height: auto;
       /* background: sienna; */
       position: absolute;
-      top: 50vh;
+      top: 55vh;
       /* background: red; */
 
 
       .buyer {
         width: 30vw;
-        height: 150px;
+        height: 25vh;
         background-color: var(--Very-Dark-Magenta);
         margin: 20px;
         margin-top: 0;
         position: relative;
         border-radius: 7px;
-        padding: 20px;
+        padding: 30px;
         color: var(--White);
         justify-content: space-around;
         /* margin-left: auto;
     margin-right: auto; */
         font-size: 13px;
-        overflow: auto;
+        // overflow: auto;
 
         img {
           border-radius: 50%;
-          height: 40px;
-          width: 40px;
+          height: 50px;
+          width: 50px;
         }
 
         .data {
           width: 50%;
-          height: 60px;
+          height: auto;
           display: inline-block;
           margin-left: 70px;
           margin-top: 0;
           line-height: 10px;
-          font-size: 12px;
+          font-size: .7rem;
           position: absolute;
+          margin-top: 2%;
 
           h3 {
             color: var(--Soft-Pink);
@@ -203,8 +207,10 @@ body {
           /* white-space: normal; */
           float: left;
           text-align: center;
-          margin-top: -10px;
+          margin-top: 15px;
           margin-bottom: 10px;
+          font-size: .9rem;
+          line-height: 25px;
 
 
           p {
@@ -246,14 +252,369 @@ body {
 
   .attribution {
     position: absolute;
-    top: 97%;
+    top: 110%;
     left: 37%;
   }
-  
-  
-  
-  
-  
+
+  @media (min-width:1100px) and (max-width:1310px) {
+
+    .container {
+    //  background: lightgreen;
+       .header {
+         .header-content {
+           h1 {
+             font-size: 2.8rem;
+            //  color: red;
+           }
+
+           p {
+             font-size: 1rem;
+           }
+         }
+       }
+
+       .buyers{
+         .buyer{
+           .text{
+             font-size: .8rem;
+           }
+         }
+       }
+    }
+  }
+
+  @media screen and (max-width: 1100px){
+
+    .container{
+      // background: lightskyblue;
+
+      .header {
+        .header-content {
+          h1 {
+            font-size: 2.7rem;
+           //  color: red;
+          }
+
+          p {
+            font-size: .9rem;
+          }
+        }
+      }
+
+      .buyers{
+        .buyer{
+          .text{
+            font-size: .7rem;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 970px){
+
+    .container{
+      // background: rgb(235, 166, 114);
+
+      .header {
+        .header-content {
+          h1 {
+            font-size: 2.5rem;
+           //  color: red;
+          }
+
+          p {
+            font-size: .8rem;
+          }
+        }
+      }
+
+      .buyers{
+        .buyer{
+          h2{
+            font-size: .7rem;
+          }
+          h3{
+            font-size: .7rem;
+          }
+          .text{
+            margin-top: 0;
+            font-size: .6rem;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 860px){
+
+    .container{
+      // background: rgb(119, 62, 225);
+
+      .header {
+        .header-content {
+          h1 {
+            font-size: 2rem;
+           //  color: red;
+          }
+
+          p {
+            font-size: .7rem;
+          }
+        }
+      }
+
+      .ratings{
+        .rating{
+          p{
+            font-size: .6rem;
+            margin-left: .2em;
+          }
+        }
+      }
+
+      .buyers{
+        .buyer{
+          .text{
+            font-size: .6rem;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 780px){
+
+    .container{
+      // background: rgb(250, 135, 248);
+
+      .header {
+        .header-content {
+          h1 {
+            font-size: 1.7rem;
+           //  color: red;
+          }
+
+          p {
+            font-size: .6rem;
+          }
+        }
+      }
+
+
+      .buyers{
+        .buyer{
+          padding: 3%;
+         .data{
+          margin-left: 25%;
+          margin-top: 0;
+
+          h2{
+            font-size: .6rem;
+          }
+          h3{
+            font-size: .6rem;
+          }
+         }
+          .text{
+            margin-top: -12%;
+            font-size: .6rem;
+            line-height: 2em;
+          }
+
+          .img{
+            img{
+              width: 30px;
+              height: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 640px){
+
+    .container{
+      // background: rgb(250, 135, 135);
+
+      .header {
+        .header-content {
+          h1 {
+            font-size: 1.4rem;
+           //  color: red;
+          }
+
+          p {
+            font-size: .5rem;
+          }
+        }
+      }
+
+
+      .buyers{
+        .buyer{
+          padding: 3%;
+         .data{
+          margin-left: 25%;
+          margin-top: 0;
+
+          h2{
+            font-size: .5rem;
+          }
+          h3{
+            font-size: .5rem;
+          }
+         }
+          .text{
+            margin-top: -12%;
+            font-size: .5rem;
+            line-height: 2em;
+          }
+
+          .img{
+            img{
+              width: 30px;
+              height: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 550px){
+
+    .container{
+      // background: rgb(250, 135, 135);
+
+      .header {
+        .header-content {
+          h1 {
+            font-size: 1.2rem;
+           //  color: red;
+          }
+        }
+
+      }
+
+      .buyers{
+        .buyer{
+          padding: 3%;
+         .data{
+          margin-left: 32%;
+          margin-top: 0;
+
+          h2{
+            font-size: .4rem;
+          }
+          h3{
+            font-size: .4rem;
+          }
+         }
+        }
+      }
+
+      .ratings{
+
+        .rating{
+       
+          p{
+            font-size: .4rem;
+          }
+        }
+        .second{
+          margin-right: 1.5rem;
+        }
+
+        .first{
+          margin-right: 3rem;
+        }
+      }
+    }
+  }
+
+
+  @media screen and (max-width: 475px) {
+
+    .container{
+
+      .buyers{
+        .buyer{
+
+         .data{
+           margin-left: 27%;
+           margin-top: -9%;
+
+           h2{
+             margin-bottom: 0;
+           }
+
+           h3{
+             margin-top: -5%;
+           }
+         }
+
+          .img{
+            img{
+              width: 20px;
+              height: 20px;
+            }
+          }
+          .text{
+            margin-top: -30%;
+            font-size: .43rem;
+            // color: red;
+          }
+        }
+      }
+    }
+
+
+  }
+
+  @media (min-width: 376px) and (max-width: 450px) {
+
+    .container{
+
+      // background: lightslategrey;
+      .buyers{
+        .buyer{
+
+         .data{
+           margin-left: 27%;
+           margin-top: -9%;
+
+           h2{
+             margin-bottom: 0;
+             font-size: .3rem;
+           }
+
+           h3{
+             margin-top: -5%;
+             font-size: .3rem;
+           }
+         }
+
+          .img{
+            img{
+              width: 20px;
+              height: 20px;
+            }
+          }
+          .text{
+            margin-top: -30%;
+            font-size: .3rem;
+            // color: red;
+          }
+        }
+      }
+    }
+
+
+  }
+
+
   @media screen and (max-width: 375px) {
     .container {
       margin-left: 5%;
@@ -261,7 +622,8 @@ body {
       width: 90%;
       height: 150vh;
       margin-top: 5%;
-  
+      // background: lime;
+
       .header {
         width: 90vw;
         display: block;
@@ -269,17 +631,17 @@ body {
         margin-top: 0;
         position: relative;
         width: 100%;
-  
+
         .header-content {
           height: 33vh;
-  
+
           h1 {
             font-size: 25px;
             margin-left: auto;
             margin-right: auto;
             text-align: center;
           }
-  
+
           p {
             font-size: 15px;
             line-height: 20px;
@@ -289,12 +651,12 @@ body {
             text-align: center;
             /* margin-bottom: 20px; */
           }
-  
+
         }
-  
+
       }
-  
-  
+
+
       .ratings {
         width: 90vw;
         display: block;
@@ -302,7 +664,7 @@ body {
         /* margin-top: 100px; */
         width: 100%;
         margin-top: 60px;
-  
+
         .rating {
           width: 95%;
           margin: 0;
@@ -312,78 +674,83 @@ body {
           margin-right: auto;
           display: block;
           padding: 10px;
-  
-  
+
+
           img {
             margin-top: 10px;
             margin-bottom: 10px;
-            
+
           }
-  
+
           img:first-child {
             margin-left: 33%;
           }
-  
+
           p {
             margin-left: 29%;
           }
-  
+
         }
-  
+
         .third {
           margin-bottom: 0;
         }
-  
+
       }
-  
+
       .buyers {
         display: block;
         margin-top: 30px;
         height: 100vh;
         width: 100%;
-  
+
         .buyer {
           width: 90%;
           height: 20vh;
           position: relative;
           /* left: -8%; */
-  
+          padding: 5.5%;
+
+         .img{
           img {
             margin-top: 6px;
             border-radius: 50%;
-            height: 35px;
-            width: 35px;
+            height: 45px;
+            width: 45px;
           }
-  
+         }
+
           .data {
             width: 50%;
             height: 40px;
             font-size: 10px;
-            margin-left: 50px;
-  
+            margin-left: 60px;
+
             h3 {
               margin-bottom: 0px;
               font-size: 15px;
+              margin-top: 2%;
             }
-  
+
             h2 {
               line-height: 30px;
-              margin-top: 0;
+              margin-top: 15%;
               margin-bottom: 0;
               font-size: 15px;
             }
-  
+
           }
-  
-  
+
+
           .text {
             top: 80px;
             width: 90%;
             white-space: normal;
             float: left;
             text-align: center;
-            margin-top: auto;
-  
+            margin-top: -4%;
+            line-height: 20px;
+
             p {
               margin-top: 14px;
               margin-bottom: 0;
@@ -392,48 +759,48 @@ body {
               width: 97%;
               text-align: left;
             }
-  
+
           }
-  
-  
-  
+
+
+
         }
-  
+
         .colton {
           margin-top: 100px;
           margin-left: -1%;
         }
-  
+
         .irene {
           margin-left: 0;
           margin-right: 0;
           margin-bottom: 20px;
           margin-top: 0;
         }
-  
+
         .anne {
           margin-left: 0;
           margin-right: 0;
           margin-top: 0;
         }
-  
+
       }
-  
-  
-  
-  
-  
-  
+
+
+
+
+
+
     }
-  
-  
+
+
     .attribution {
       /* display: block; */
       height: 40px;
       /* background-color: khaki; */
       position: absolute;
-      top: 155%;
-      left: 8%;
+      top: 170%;
+      left: 15%;
     }
   }
 
